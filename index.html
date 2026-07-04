@@ -269,7 +269,7 @@ function buildQuestions(){
     const card=document.createElement('div');
     card.className='q-card';
     card.innerHTML=
-      '<div class="q-meta"><span class="q-num">Câu '+(qi+1)+'</span></div>'+
+      '<div style="margin-bottom:10px"><span class="q-num">Câu '+(qi+1)+'</span></div>'+
       '<div class="q-sentence">'+q.s+'</div>'+
       '<div class="q-ask">Câu này thuộc thì nào?</div>'+
       '<div class="opts" id="opts-'+qi+'"></div>';
