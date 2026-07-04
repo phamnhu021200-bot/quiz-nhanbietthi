@@ -9,8 +9,6 @@
 body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f4ff;min-height:100vh;display:flex;justify-content:center;padding:20px 12px}
 .screen{display:none;width:100%;max-width:720px}
 .screen.active{display:block}
-
-/* NAME */
 .name-card{background:#fff;border-radius:18px;padding:44px 36px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.1)}
 .name-card .icon{font-size:52px;margin-bottom:14px}
 .name-card h1{font-size:22px;font-weight:800;color:#1e3a5f;margin-bottom:4px}
@@ -20,12 +18,11 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f4ff;min-height:100vh
 .name-input{width:100%;padding:13px 16px;font-size:15px;border:2px solid #e2e8f0;border-radius:10px;outline:none;margin-bottom:14px;transition:border-color .2s;color:#1e293b}
 .name-input:focus{border-color:#4f46e5}
 .name-input::placeholder{color:#94a3b8}
-.btn-start{width:100%;padding:14px;font-size:15px;font-weight:800;background:#4f46e5;color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .2s,transform .1s}
+.btn-start{width:100%;padding:14px;font-size:15px;font-weight:800;background:#4f46e5;color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .2s}
 .btn-start:hover:not(:disabled){background:#4338ca}
 .btn-start:disabled{background:#cbd5e1;cursor:not-allowed}
 .name-note{font-size:12px;color:#94a3b8;margin-top:12px}
 
-/* QUIZ */
 .quiz-header{background:#fff;border-radius:14px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
 .hdr-left{display:flex;flex-direction:column;gap:2px}
 .hdr-name{font-size:14px;color:#1e293b;font-weight:700}
@@ -38,22 +35,9 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f4ff;min-height:100vh
 
 .q-list{display:flex;flex-direction:column;gap:12px;padding-bottom:80px}
 .q-card{background:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 1px 6px rgba(0,0,0,.07);border-top:4px solid #4f46e5}
-
 .q-meta{display:flex;align-items:center;gap:8px;margin-bottom:10px}
 .q-num{background:#4f46e5;color:#fff;font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px}
-.q-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px}
-.b-spt{background:#dcfce7;color:#15803d}
-.b-spc{background:#dbeafe;color:#1d4ed8}
-.b-sps{background:#fce7f3;color:#9d174d}
-.b-prc{background:#fef9c3;color:#854d0e}
-.b-spf{background:#ede9fe;color:#5b21b6}
-
-.q-sentence{font-size:15px;color:#1e293b;line-height:1.7;margin-bottom:6px;font-weight:500}
-.signal-box{background:#fff7ed;border:1px solid #fdba74;border-radius:8px;padding:7px 12px;font-size:12px;color:#9a3412;margin-bottom:14px}
-.signal-box b{color:#c2410c}
-
-mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-weight:700;font-style:normal}
-
+.q-sentence{font-size:15px;color:#1e293b;line-height:1.7;margin-bottom:14px;font-weight:500}
 .q-ask{font-size:13px;font-weight:700;color:#475569;margin-bottom:10px}
 .opts{display:flex;flex-direction:column;gap:7px}
 .opt-btn{display:flex;align-items:center;gap:9px;padding:10px 14px;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:9px;cursor:pointer;font-size:14px;color:#334155;transition:all .13s;width:100%;text-align:left}
@@ -65,11 +49,10 @@ mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-wei
 .submit-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e2e8f0;padding:11px 20px;display:flex;align-items:center;justify-content:space-between;z-index:20;box-shadow:0 -4px 14px rgba(0,0,0,.08)}
 .bar-info{font-size:13px;color:#64748b}
 .bar-info b{color:#1e293b}
-.btn-nop{padding:11px 30px;font-size:15px;font-weight:800;background:#10b981;color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .15s,transform .1s}
+.btn-nop{padding:11px 30px;font-size:15px;font-weight:800;background:#10b981;color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .15s}
 .btn-nop:hover:not(:disabled){background:#059669}
 .btn-nop:disabled{background:#cbd5e1;cursor:not-allowed}
 
-/* RESULT */
 .result-card{background:#fff;border-radius:18px;padding:40px 28px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.1);margin-top:16px}
 .r-icon{font-size:62px;margin-bottom:10px}
 .r-title{font-size:20px;font-weight:800;color:#1e293b;margin-bottom:4px}
@@ -78,9 +61,9 @@ mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-wei
 .s-box{background:#f8fafc;border-radius:12px;padding:16px 18px;min-width:90px;flex:1;max-width:120px}
 .s-box .num{font-size:32px;font-weight:800;line-height:1}
 .s-box .lbl{font-size:11px;color:#94a3b8;margin-top:4px}
-.c .num{color:#10b981}
-.w .num{color:#ef4444}
-.p .num{color:#6366f1}
+.sc .num{color:#10b981}
+.sw .num{color:#ef4444}
+.sp .num{color:#6366f1}
 
 .verdict-pass{background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;padding:16px 20px;margin-bottom:20px}
 .verdict-pass p{color:#15803d;font-size:14px;line-height:1.6}
@@ -92,16 +75,15 @@ mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-wei
 .btn-retry.opt{background:#6366f1;color:#fff}
 
 .wrong-list{margin-top:28px;text-align:left}
-.wrong-list h3{font-size:13px;font-weight:800;color:#64748b;text-transform:uppercase;letter-spacing:.09em;margin-bottom:12px;padding-bottom:7px;border-bottom:2px solid #e2e8f0}
+.wl-title{font-size:13px;font-weight:800;color:#64748b;text-transform:uppercase;letter-spacing:.09em;margin-bottom:12px;padding-bottom:7px;border-bottom:2px solid #e2e8f0}
 .w-card{border-radius:10px;padding:13px 16px;margin-bottom:9px;border-left:4px solid #ef4444;background:#fff5f5;font-size:14px}
 .w-card .wq{font-weight:600;margin-bottom:5px;line-height:1.6;color:#1e293b}
 .w-card .wcho{color:#dc2626;font-size:13px;margin-top:4px}
-.w-card .wsig{color:#b45309;font-size:12px;margin-top:3px;font-style:italic}
+.w-card .wsig{color:#92400e;font-size:12px;margin-top:5px;background:#fef3c7;border-radius:6px;padding:5px 9px;display:inline-block}
 </style>
 </head>
 <body>
 
-<!-- SCREEN 1: NAME -->
 <div class="screen active" id="screen-name">
   <div class="name-card">
     <div class="icon">🔍</div>
@@ -115,14 +97,11 @@ mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-wei
     <input class="name-input" id="name-input" type="text"
            placeholder="Nhập họ và tên của em..." maxlength="60"
            oninput="checkName()" onkeydown="if(event.key==='Enter')startQuiz()">
-    <button class="btn-start" id="btn-start" onclick="startQuiz()" disabled>
-      Bắt đầu làm bài →
-    </button>
+    <button class="btn-start" id="btn-start" onclick="startQuiz()" disabled>Bắt đầu làm bài →</button>
     <p class="name-note">Nhập đủ 2 ký tự để mở khoá bài thi</p>
   </div>
 </div>
 
-<!-- SCREEN 2: QUIZ -->
 <div class="screen" id="screen-quiz">
   <div class="quiz-header">
     <div class="hdr-left">
@@ -141,16 +120,15 @@ mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-wei
   </div>
 </div>
 
-<!-- SCREEN 3: RESULT -->
 <div class="screen" id="screen-result">
   <div class="result-card">
     <div class="r-icon" id="r-icon">🏆</div>
     <div class="r-title" id="r-title"></div>
     <div class="r-name" id="r-name"></div>
     <div class="scores-row">
-      <div class="s-box c"><div class="num" id="r-c">–</div><div class="lbl">Câu đúng</div></div>
-      <div class="s-box w"><div class="num" id="r-w">–</div><div class="lbl">Câu sai</div></div>
-      <div class="s-box p"><div class="num" id="r-p">–</div><div class="lbl">% đúng</div></div>
+      <div class="s-box sc"><div class="num" id="r-c">–</div><div class="lbl">Câu đúng</div></div>
+      <div class="s-box sw"><div class="num" id="r-w">–</div><div class="lbl">Câu sai</div></div>
+      <div class="s-box sp"><div class="num" id="r-p">–</div><div class="lbl">% đúng</div></div>
     </div>
     <div id="r-verdict"></div>
     <button class="btn-retry" id="btn-retry" onclick="retakeQuiz()">🔄 Làm lại</button>
@@ -159,204 +137,106 @@ mark{background:#fde68a;color:#92400e;border-radius:3px;padding:1px 3px;font-wei
 </div>
 
 <script>
-const TOTAL = 30, TIMER_SECS = 600, MAX_WRONG = 5;
+const TOTAL=30, TIMER_SECS=600, MAX_WRONG=5;
 
-// badge: 0=SPT,1=HTTD,2=QKD,3=QKTD,4=TLD
-const BADGE = [
-  {cls:'b-spt',  label:'Hiện tại đơn'},
-  {cls:'b-spc',  label:'Hiện tại tiếp diễn'},
-  {cls:'b-sps',  label:'Quá khứ đơn'},
-  {cls:'b-prc',  label:'Quá khứ tiếp diễn'},
-  {cls:'b-spf',  label:'Tương lai đơn'}
-];
-const TENSE_NAMES = ['Hiện tại đơn','Hiện tại tiếp diễn','Quá khứ đơn','Quá khứ tiếp diễn','Tương lai đơn'];
-
-const QS = [
-  // === HIỆN TẠI ĐƠN (6 câu) ===
-  {
-    badge:0,
-    s:'She <mark>usually</mark> goes to school by bike <mark>every morning</mark>.',
-    sig:'usually, every morning',
-    opts:['Hiện tại đơn','Hiện tại tiếp diễn','Quá khứ đơn','Tương lai đơn'], a:0
-  },
-  {
-    badge:0,
-    s:'They are <mark>never</mark> at school <mark>on Sundays</mark>.',
-    sig:'never, on Sundays',
-    opts:['Quá khứ đơn','Hiện tại đơn','Hiện tại tiếp diễn','Tương lai đơn'], a:1
-  },
-  {
-    badge:0,
-    s:'Nam <mark>never</mark> forgets his homework.',
-    sig:'never',
-    opts:['Hiện tại tiếp diễn','Quá khứ đơn','Hiện tại đơn','Quá khứ tiếp diễn'], a:2
-  },
-  {
-    badge:0,
-    s:'Water boils at 100°C. <em style="font-size:12px;color:#64748b">(chân lý chung)</em>',
-    sig:'chân lý chung / sự thật hiển nhiên',
-    opts:['Tương lai đơn','Quá khứ đơn','Hiện tại tiếp diễn','Hiện tại đơn'], a:3
-  },
-  {
-    badge:0,
-    s:'The bus leaves at 7 o\'clock <mark>every day</mark>.',
-    sig:'every day',
-    opts:['Hiện tại đơn','Tương lai đơn','Quá khứ đơn','Quá khứ tiếp diễn'], a:0
-  },
-  {
-    badge:0,
-    s:'Students <mark>usually</mark> wear uniforms at school.',
-    sig:'usually',
-    opts:['Quá khứ tiếp diễn','Hiện tại tiếp diễn','Hiện tại đơn','Quá khứ đơn'], a:2
-  },
-  // === HIỆN TẠI TIẾP DIỄN (6 câu) ===
-  {
-    badge:1,
-    s:'<mark>Look!</mark> The boys are playing football in the yard.',
-    sig:'Look!',
-    opts:['Hiện tại đơn','Hiện tại tiếp diễn','Quá khứ đơn','Tương lai đơn'], a:1
-  },
-  {
-    badge:1,
-    s:'<mark>Listen!</mark> Someone is singing in the next room.',
-    sig:'Listen!',
-    opts:['Hiện tại tiếp diễn','Hiện tại đơn','Quá khứ tiếp diễn','Tương lai đơn'], a:0
-  },
-  {
-    badge:1,
-    s:'<mark>Be quiet!</mark> The baby is sleeping.',
-    sig:'Be quiet!',
-    opts:['Quá khứ đơn','Tương lai đơn','Hiện tại đơn','Hiện tại tiếp diễn'], a:3
-  },
-  {
-    badge:1,
-    s:'My mother is cooking dinner <mark>right now</mark>.',
-    sig:'right now',
-    opts:['Hiện tại tiếp diễn','Hiện tại đơn','Quá khứ tiếp diễn','Quá khứ đơn'], a:0
-  },
-  {
-    badge:1,
-    s:'What is Nam doing <mark>at present</mark>?',
-    sig:'at present',
-    opts:['Quá khứ đơn','Tương lai đơn','Hiện tại tiếp diễn','Hiện tại đơn'], a:2
-  },
-  {
-    badge:1,
-    s:'My friends are preparing for the speaking test <mark>this week</mark>.',
-    sig:'this week',
-    opts:['Hiện tại đơn','Quá khứ tiếp diễn','Tương lai đơn','Hiện tại tiếp diễn'], a:3
-  },
-  // === QUÁ KHỨ ĐƠN (6 câu) ===
-  {
-    badge:2,
-    s:'They visited their grandparents <mark>last Sunday</mark>.',
-    sig:'last Sunday',
-    opts:['Hiện tại tiếp diễn','Quá khứ đơn','Hiện tại đơn','Tương lai đơn'], a:1
-  },
-  {
-    badge:2,
-    s:'Nam bought a new dictionary <mark>two days ago</mark>.',
-    sig:'two days ago',
-    opts:['Hiện tại đơn','Tương lai đơn','Quá khứ đơn','Quá khứ tiếp diễn'], a:2
-  },
-  {
-    badge:2,
-    s:'The students finished the test <mark>ten minutes ago</mark>.',
-    sig:'ten minutes ago',
-    opts:['Quá khứ đơn','Hiện tại tiếp diễn','Quá khứ tiếp diễn','Hiện tại đơn'], a:0
-  },
-  {
-    badge:2,
-    s:'I was at home <mark>yesterday</mark> evening.',
-    sig:'yesterday',
-    opts:['Tương lai đơn','Hiện tại đơn','Hiện tại tiếp diễn','Quá khứ đơn'], a:3
-  },
-  {
-    badge:2,
-    s:'We had a small English test <mark>last Monday</mark>.',
-    sig:'last Monday',
-    opts:['Quá khứ đơn','Quá khứ tiếp diễn','Hiện tại tiếp diễn','Tương lai đơn'], a:0
-  },
-  {
-    badge:2,
-    s:'My classmates made posters for the school project <mark>in 2023</mark>.',
-    sig:'in 2023 (mốc thời gian đã qua)',
-    opts:['Hiện tại tiếp diễn','Tương lai đơn','Hiện tại đơn','Quá khứ đơn'], a:3
-  },
-  // === QUÁ KHỨ TIẾP DIỄN (6 câu) ===
-  {
-    badge:3,
-    s:'I was doing my homework <mark>when</mark> my friend called me. <em style="font-size:12px;color:#64748b">(hành động đang xảy ra)</em>',
-    sig:'when (hành động đang diễn ra bị gián đoạn)',
-    opts:['Quá khứ tiếp diễn','Quá khứ đơn','Hiện tại tiếp diễn','Hiện tại đơn'], a:0
-  },
-  {
-    badge:3,
-    s:'<mark>While</mark> we were walking to school, it started to rain.',
-    sig:'while',
-    opts:['Hiện tại đơn','Quá khứ đơn','Quá khứ tiếp diễn','Tương lai đơn'], a:2
-  },
-  {
-    badge:3,
-    s:'They were playing badminton <mark>when</mark> the teacher arrived.',
-    sig:'when (hành động đang diễn ra bị gián đoạn)',
-    opts:['Tương lai đơn','Quá khứ tiếp diễn','Hiện tại tiếp diễn','Quá khứ đơn'], a:1
-  },
-  {
-    badge:3,
-    s:'<mark>While</mark> my father was reading a newspaper, my mother was cooking dinner.',
-    sig:'while',
-    opts:['Quá khứ tiếp diễn','Hiện tại đơn','Quá khứ đơn','Tương lai đơn'], a:0
-  },
-  {
-    badge:3,
-    s:'What were you doing <mark>at 8 p.m. last night</mark>?',
-    sig:'at 8 p.m. last night (thời điểm cụ thể trong quá khứ)',
-    opts:['Hiện tại tiếp diễn','Quá khứ đơn','Hiện tại đơn','Quá khứ tiếp diễn'], a:3
-  },
-  {
-    badge:3,
-    s:'My sister was cooking dinner <mark>while</mark> I was doing the dishes.',
-    sig:'while',
-    opts:['Quá khứ đơn','Hiện tại tiếp diễn','Quá khứ tiếp diễn','Hiện tại đơn'], a:2
-  },
-  // === TƯƠNG LAI ĐƠN (6 câu) ===
-  {
-    badge:4,
-    s:'<mark>I think</mark> she will pass the English test.',
-    sig:'I think',
-    opts:['Quá khứ đơn','Hiện tại đơn','Tương lai đơn','Hiện tại tiếp diễn'], a:2
-  },
-  {
-    badge:4,
-    s:'We will visit our grandparents <mark>next weekend</mark>.',
-    sig:'next weekend',
-    opts:['Tương lai đơn','Quá khứ tiếp diễn','Hiện tại đơn','Quá khứ đơn'], a:0
-  },
-  {
-    badge:4,
-    s:'It will rain <mark>soon</mark>.',
-    sig:'soon',
-    opts:['Hiện tại tiếp diễn','Tương lai đơn','Quá khứ đơn','Hiện tại đơn'], a:1
-  },
-  {
-    badge:4,
-    s:'<mark>I hope</mark> our class will win the competition.',
-    sig:'I hope',
-    opts:['Quá khứ tiếp diễn','Hiện tại đơn','Quá khứ đơn','Tương lai đơn'], a:3
-  },
-  {
-    badge:4,
-    s:'My brother <mark>probably</mark> will study abroad <mark>next year</mark>.',
-    sig:'probably, next year',
-    opts:['Tương lai đơn','Hiện tại tiếp diễn','Quá khứ đơn','Hiện tại đơn'], a:0
-  },
-  {
-    badge:4,
-    s:'She will be a good teacher <mark>in the future</mark>.',
-    sig:'in the future',
-    opts:['Hiện tại đơn','Quá khứ tiếp diễn','Hiện tại tiếp diễn','Tương lai đơn'], a:3
-  }
+// Câu hỏi: câu văn THUẦN (không highlight, không gợi ý)
+// sig chỉ hiện SAU KHI nộp bài, ở phần review
+const QS=[
+  // HIỆN TẠI ĐƠN
+  {s:"She usually goes to school by bike every morning.",
+   opts:["Hiện tại đơn","Hiện tại tiếp diễn","Quá khứ đơn","Tương lai đơn"],a:0,
+   sig:"usually, every morning"},
+  {s:"They are never at school on Sundays.",
+   opts:["Quá khứ đơn","Hiện tại đơn","Hiện tại tiếp diễn","Tương lai đơn"],a:1,
+   sig:"never, on Sundays"},
+  {s:"Nam never forgets his homework.",
+   opts:["Hiện tại tiếp diễn","Quá khứ đơn","Hiện tại đơn","Quá khứ tiếp diễn"],a:2,
+   sig:"never"},
+  {s:"Water boils at 100°C.",
+   opts:["Tương lai đơn","Quá khứ đơn","Hiện tại tiếp diễn","Hiện tại đơn"],a:3,
+   sig:"chân lý chung / sự thật hiển nhiên"},
+  {s:"The bus leaves at 7 o'clock every day.",
+   opts:["Hiện tại đơn","Tương lai đơn","Quá khứ đơn","Quá khứ tiếp diễn"],a:0,
+   sig:"every day"},
+  {s:"Students usually wear uniforms at school.",
+   opts:["Quá khứ tiếp diễn","Hiện tại tiếp diễn","Hiện tại đơn","Quá khứ đơn"],a:2,
+   sig:"usually"},
+  // HIỆN TẠI TIẾP DIỄN
+  {s:"Look! The boys are playing football in the yard.",
+   opts:["Hiện tại đơn","Hiện tại tiếp diễn","Quá khứ đơn","Tương lai đơn"],a:1,
+   sig:"Look!"},
+  {s:"Listen! Someone is singing in the next room.",
+   opts:["Hiện tại tiếp diễn","Hiện tại đơn","Quá khứ tiếp diễn","Tương lai đơn"],a:0,
+   sig:"Listen!"},
+  {s:"Be quiet! The baby is sleeping.",
+   opts:["Quá khứ đơn","Tương lai đơn","Hiện tại đơn","Hiện tại tiếp diễn"],a:3,
+   sig:"Be quiet!"},
+  {s:"My mother is cooking dinner right now.",
+   opts:["Hiện tại tiếp diễn","Hiện tại đơn","Quá khứ tiếp diễn","Quá khứ đơn"],a:0,
+   sig:"right now"},
+  {s:"What is Nam doing at present?",
+   opts:["Quá khứ đơn","Tương lai đơn","Hiện tại tiếp diễn","Hiện tại đơn"],a:2,
+   sig:"at present"},
+  {s:"My friends are preparing for the speaking test this week.",
+   opts:["Hiện tại đơn","Quá khứ tiếp diễn","Tương lai đơn","Hiện tại tiếp diễn"],a:3,
+   sig:"this week"},
+  // QUÁ KHỨ ĐƠN
+  {s:"They visited their grandparents last Sunday.",
+   opts:["Hiện tại tiếp diễn","Quá khứ đơn","Hiện tại đơn","Tương lai đơn"],a:1,
+   sig:"last Sunday"},
+  {s:"Nam bought a new dictionary two days ago.",
+   opts:["Hiện tại đơn","Tương lai đơn","Quá khứ đơn","Quá khứ tiếp diễn"],a:2,
+   sig:"two days ago"},
+  {s:"The students finished the test ten minutes ago.",
+   opts:["Quá khứ đơn","Hiện tại tiếp diễn","Quá khứ tiếp diễn","Hiện tại đơn"],a:0,
+   sig:"ten minutes ago"},
+  {s:"I was at home yesterday evening.",
+   opts:["Tương lai đơn","Hiện tại đơn","Hiện tại tiếp diễn","Quá khứ đơn"],a:3,
+   sig:"yesterday"},
+  {s:"We had a small English test last Monday.",
+   opts:["Quá khứ đơn","Quá khứ tiếp diễn","Hiện tại tiếp diễn","Tương lai đơn"],a:0,
+   sig:"last Monday"},
+  {s:"My classmates made posters for the school project in 2023.",
+   opts:["Hiện tại tiếp diễn","Tương lai đơn","Hiện tại đơn","Quá khứ đơn"],a:3,
+   sig:"in 2023 (mốc thời gian đã qua)"},
+  // QUÁ KHỨ TIẾP DIỄN
+  {s:"I was doing my homework when my friend called me.",
+   opts:["Quá khứ tiếp diễn","Quá khứ đơn","Hiện tại tiếp diễn","Hiện tại đơn"],a:0,
+   sig:"when (hành động đang diễn ra bị gián đoạn)"},
+  {s:"While we were walking to school, it started to rain.",
+   opts:["Hiện tại đơn","Quá khứ đơn","Quá khứ tiếp diễn","Tương lai đơn"],a:2,
+   sig:"while"},
+  {s:"They were playing badminton when the teacher arrived.",
+   opts:["Tương lai đơn","Quá khứ tiếp diễn","Hiện tại tiếp diễn","Quá khứ đơn"],a:1,
+   sig:"when (hành động đang diễn ra bị gián đoạn)"},
+  {s:"While my father was reading a newspaper, my mother was cooking dinner.",
+   opts:["Quá khứ tiếp diễn","Hiện tại đơn","Quá khứ đơn","Tương lai đơn"],a:0,
+   sig:"while"},
+  {s:"What were you doing at 8 p.m. last night?",
+   opts:["Hiện tại tiếp diễn","Quá khứ đơn","Hiện tại đơn","Quá khứ tiếp diễn"],a:3,
+   sig:"at 8 p.m. last night (thời điểm cụ thể trong quá khứ)"},
+  {s:"My sister was cooking dinner while I was doing the dishes.",
+   opts:["Quá khứ đơn","Hiện tại tiếp diễn","Quá khứ tiếp diễn","Hiện tại đơn"],a:2,
+   sig:"while"},
+  // TƯƠNG LAI ĐƠN
+  {s:"I think she will pass the English test.",
+   opts:["Quá khứ đơn","Hiện tại đơn","Tương lai đơn","Hiện tại tiếp diễn"],a:2,
+   sig:"I think"},
+  {s:"We will visit our grandparents next weekend.",
+   opts:["Tương lai đơn","Quá khứ tiếp diễn","Hiện tại đơn","Quá khứ đơn"],a:0,
+   sig:"next weekend"},
+  {s:"It will rain soon.",
+   opts:["Hiện tại tiếp diễn","Tương lai đơn","Quá khứ đơn","Hiện tại đơn"],a:1,
+   sig:"soon"},
+  {s:"I hope our class will win the competition.",
+   opts:["Quá khứ tiếp diễn","Hiện tại đơn","Quá khứ đơn","Tương lai đơn"],a:3,
+   sig:"I hope"},
+  {s:"My brother probably will study abroad next year.",
+   opts:["Tương lai đơn","Hiện tại tiếp diễn","Quá khứ đơn","Hiện tại đơn"],a:0,
+   sig:"probably, next year"},
+  {s:"She will be a good teacher in the future.",
+   opts:["Hiện tại đơn","Quá khứ tiếp diễn","Hiện tại tiếp diễn","Tương lai đơn"],a:3,
+   sig:"in the future"}
 ];
 
 let studentName='', answers=new Array(TOTAL).fill(-1), timerHandle=null, secsLeft=TIMER_SECS, isDone=false;
@@ -366,153 +246,114 @@ function showScreen(id){
   document.getElementById(id).classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
 }
-
 function checkName(){
-  document.getElementById('btn-start').disabled = document.getElementById('name-input').value.trim().length < 2;
+  document.getElementById('btn-start').disabled=document.getElementById('name-input').value.trim().length<2;
 }
-
 function startQuiz(){
-  const raw = document.getElementById('name-input').value.trim();
-  if(raw.length < 2) return;
-  studentName = raw;
-  answers = new Array(TOTAL).fill(-1);
-  isDone = false;
+  const raw=document.getElementById('name-input').value.trim();
+  if(raw.length<2)return;
+  studentName=raw;
+  answers=new Array(TOTAL).fill(-1);
+  isDone=false;
   buildQuestions();
-  document.getElementById('hdr-name').textContent = studentName;
+  document.getElementById('hdr-name').textContent=studentName;
   updateProgress();
   showScreen('screen-quiz');
   startTimer();
 }
-
 function buildQuestions(){
-  const list = document.getElementById('q-list');
-  list.innerHTML = '';
-  const LETTERS = ['A','B','C','D'];
-  QS.forEach((q, qi) => {
-    const b = BADGE[q.badge];
-    const card = document.createElement('div');
-    card.className = 'q-card';
-    card.innerHTML =
-      `<div class="q-meta">
-        <span class="q-num">Câu ${qi+1}</span>
-        <span class="q-badge ${b.cls}">${b.label}</span>
-      </div>
-      <div class="q-sentence">${q.s}</div>
-      <div class="signal-box">🔍 Dấu hiệu: <b>${q.sig}</b></div>
-      <div class="q-ask">Câu này thuộc thì nào?</div>
-      <div class="opts" id="opts-${qi}"></div>`;
+  const list=document.getElementById('q-list');
+  list.innerHTML='';
+  const L=['A','B','C','D'];
+  QS.forEach((q,qi)=>{
+    const card=document.createElement('div');
+    card.className='q-card';
+    card.innerHTML=
+      '<div class="q-meta"><span class="q-num">Câu '+(qi+1)+'</span></div>'+
+      '<div class="q-sentence">'+q.s+'</div>'+
+      '<div class="q-ask">Câu này thuộc thì nào?</div>'+
+      '<div class="opts" id="opts-'+qi+'"></div>';
     list.appendChild(card);
-
-    const optsDiv = card.querySelector(`#opts-${qi}`);
-    q.opts.forEach((opt, oi) => {
-      const btn = document.createElement('button');
-      btn.className = 'opt-btn';
-      btn.innerHTML = `<span class="opt-letter">${LETTERS[oi]}</span>${opt}`;
-      btn.onclick = () => choose(qi, oi);
-      optsDiv.appendChild(btn);
+    const od=card.querySelector('#opts-'+qi);
+    q.opts.forEach((opt,oi)=>{
+      const btn=document.createElement('button');
+      btn.className='opt-btn';
+      btn.innerHTML='<span class="opt-letter">'+L[oi]+'</span>'+opt;
+      btn.onclick=()=>choose(qi,oi);
+      od.appendChild(btn);
     });
   });
 }
-
-function choose(qi, oi){
-  if(isDone) return;
-  answers[qi] = oi;
-  document.querySelectorAll(`#opts-${qi} .opt-btn`).forEach((b,i) => {
-    b.classList.toggle('chosen', i===oi);
-  });
+function choose(qi,oi){
+  if(isDone)return;
+  answers[qi]=oi;
+  document.querySelectorAll('#opts-'+qi+' .opt-btn').forEach((b,i)=>b.classList.toggle('chosen',i===oi));
   updateProgress();
 }
-
 function updateProgress(){
-  const done = answers.filter(a=>a!==-1).length;
-  document.getElementById('hdr-prog').textContent = `Đã trả lời: ${done} / ${TOTAL}`;
-  document.getElementById('bar-info').innerHTML = `Đã chọn: <b>${done}</b> / ${TOTAL} câu`;
-  document.getElementById('btn-nop').disabled = (done < TOTAL);
+  const done=answers.filter(a=>a!==-1).length;
+  document.getElementById('hdr-prog').textContent='Đã trả lời: '+done+' / '+TOTAL;
+  document.getElementById('bar-info').innerHTML='Đã chọn: <b>'+done+'</b> / '+TOTAL+' câu';
+  document.getElementById('btn-nop').disabled=(done<TOTAL);
 }
-
 function startTimer(){
-  secsLeft = TIMER_SECS;
+  secsLeft=TIMER_SECS;
   renderTimer();
-  timerHandle = setInterval(() => {
-    secsLeft--;
-    renderTimer();
-    if(secsLeft <= 0){ clearInterval(timerHandle); submitQuiz(); }
-  }, 1000);
+  timerHandle=setInterval(()=>{
+    secsLeft--;renderTimer();
+    if(secsLeft<=0){clearInterval(timerHandle);submitQuiz();}
+  },1000);
 }
-
 function renderTimer(){
-  const m = Math.floor(secsLeft/60).toString().padStart(2,'0');
-  const s = (secsLeft%60).toString().padStart(2,'0');
-  const el = document.getElementById('timer');
-  el.textContent = m+':'+s;
-  el.classList.toggle('warn', secsLeft <= 60);
+  const m=Math.floor(secsLeft/60).toString().padStart(2,'0'),s=(secsLeft%60).toString().padStart(2,'0');
+  const el=document.getElementById('timer');
+  el.textContent=m+':'+s;
+  el.classList.toggle('warn',secsLeft<=60);
 }
-
 function submitQuiz(){
-  if(isDone) return;
-  isDone = true;
+  if(isDone)return;
+  isDone=true;
   clearInterval(timerHandle);
-
-  let wrong = 0;
-  const wrongItems = [];
-  QS.forEach((q, qi) => {
-    if(answers[qi] !== q.a){ wrong++; wrongItems.push(qi); }
-  });
-  const correct = TOTAL - wrong;
-  const pct = Math.round(correct/TOTAL*100);
-  const passed = wrong <= MAX_WRONG;
-
-  document.getElementById('r-icon').textContent = passed ? '🏆' : '😢';
-  document.getElementById('r-title').textContent = passed ? 'Xuất sắc! Đạt yêu cầu!' : 'Chưa đạt — cần ôn lại!';
-  document.getElementById('r-name').textContent = 'Học sinh: ' + studentName;
-  document.getElementById('r-c').textContent = correct;
-  document.getElementById('r-w').textContent = wrong;
-  document.getElementById('r-p').textContent = pct + '%';
-
-  const verdictEl = document.getElementById('r-verdict');
-  const retryBtn = document.getElementById('btn-retry');
+  let wrong=0;
+  const wi=[];
+  QS.forEach((q,qi)=>{if(answers[qi]!==q.a){wrong++;wi.push(qi);}});
+  const correct=TOTAL-wrong,pct=Math.round(correct/TOTAL*100),passed=wrong<=MAX_WRONG;
+  document.getElementById('r-icon').textContent=passed?'🏆':'😢';
+  document.getElementById('r-title').textContent=passed?'Xuất sắc! Đạt yêu cầu!':'Chưa đạt — cần ôn lại!';
+  document.getElementById('r-name').textContent='Học sinh: '+studentName;
+  document.getElementById('r-c').textContent=correct;
+  document.getElementById('r-w').textContent=wrong;
+  document.getElementById('r-p').textContent=pct+'%';
+  const ve=document.getElementById('r-verdict'),rb=document.getElementById('btn-retry');
   if(passed){
-    verdictEl.innerHTML = `<div class="verdict-pass"><p>✅ Sai <b>${wrong}/${TOTAL}</b> câu — trong ngưỡng cho phép (≤ ${MAX_WRONG}).<br>Kết quả: ${pct}%. Tiếp tục phát huy nhé!</p></div>`;
-    retryBtn.textContent = '🔄 Làm lại để luyện tập thêm';
-    retryBtn.className = 'btn-retry opt';
+    ve.innerHTML='<div class="verdict-pass"><p>✅ Sai <b>'+wrong+'/'+TOTAL+'</b> câu — trong ngưỡng cho phép (≤ '+MAX_WRONG+').<br>Kết quả: '+pct+'%. Tiếp tục phát huy nhé!</p></div>';
+    rb.textContent='🔄 Làm lại để luyện thêm';rb.className='btn-retry opt';
   } else {
-    verdictEl.innerHTML = `<div class="verdict-fail"><p>❌ Sai <b>${wrong}/${TOTAL}</b> câu — cần sai ≤ ${MAX_WRONG} để đạt.<br>Ôn lại dấu hiệu nhận biết từng thì rồi làm lại nhé!</p></div>`;
-    retryBtn.textContent = '🔄 Làm lại toàn bộ (bắt buộc)';
-    retryBtn.className = 'btn-retry must';
+    ve.innerHTML='<div class="verdict-fail"><p>❌ Sai <b>'+wrong+'/'+TOTAL+'</b> câu — cần sai ≤ '+MAX_WRONG+' để đạt.<br>Ôn lại dấu hiệu nhận biết từng thì rồi làm lại nhé!</p></div>';
+    rb.textContent='🔄 Làm lại toàn bộ (bắt buộc)';rb.className='btn-retry must';
   }
-
-  // Wrong list — KHÔNG hiện đáp án đúng
-  const wl = document.getElementById('wrong-list');
-  if(wrongItems.length === 0){
-    wl.innerHTML = '<p style="text-align:center;color:#15803d;font-size:16px;font-weight:800;padding:20px">🎉 Perfect! Tất cả 30 câu đều đúng!</p>';
+  const wl=document.getElementById('wrong-list');
+  if(wi.length===0){
+    wl.innerHTML='<p style="text-align:center;color:#15803d;font-size:16px;font-weight:800;padding:20px">🎉 Perfect! Tất cả 30 câu đều đúng!</p>';
   } else {
-    let html = `<h3>❌ Các câu sai (${wrongItems.length} câu)</h3>`;
-    wrongItems.forEach(qi => {
-      const q = QS[qi];
-      const cho = answers[qi];
-      const choText = cho === -1 ? 'Chưa trả lời' : q.opts[cho];
-      const plain = q.s.replace(/<[^>]+>/g,'');
-      html += `<div class="w-card">
-        <div class="wq">Câu ${qi+1}. ${plain}</div>
-        <div class="wcho">Bạn chọn: ${cho===-1?'–':['A','B','C','D'][cho]}. ${choText}</div>
-        <div class="wsig">🔍 Dấu hiệu: ${q.sig}</div>
-      </div>`;
+    let html='<div class="wl-title">❌ Các câu sai ('+wi.length+' câu)</div>';
+    wi.forEach(qi=>{
+      const q=QS[qi],cho=answers[qi];
+      const choText=cho===-1?'Chưa trả lời':q.opts[cho];
+      html+='<div class="w-card">'+
+        '<div class="wq">Câu '+(qi+1)+'. '+q.s+'</div>'+
+        '<div class="wcho">Bạn chọn: '+(cho===-1?'–':['A','B','C','D'][cho])+'. '+choText+'</div>'+
+        '<div class="wsig">💡 Dấu hiệu trong câu: '+q.sig+'</div>'+
+        '</div>';
     });
-    wl.innerHTML = html;
+    wl.innerHTML=html;
   }
-
   showScreen('screen-result');
 }
-
 function retakeQuiz(){
-  answers = new Array(TOTAL).fill(-1);
-  isDone = false;
-  clearInterval(timerHandle);
-  buildQuestions();
-  document.getElementById('hdr-name').textContent = studentName;
-  updateProgress();
-  showScreen('screen-quiz');
-  startTimer();
+  answers=new Array(TOTAL).fill(-1);isDone=false;clearInterval(timerHandle);
+  buildQuestions();document.getElementById('hdr-name').textContent=studentName;
+  updateProgress();showScreen('screen-quiz');startTimer();
 }
 </script>
 </body>
